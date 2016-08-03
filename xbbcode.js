@@ -790,6 +790,6 @@ var XBBCODE = (function() {
 })();
 
 // for node
-if (module) {
+if (typeof module !== "undefined") { // fix for ReferenceError
     module.exports = XBBCODE;
 }
